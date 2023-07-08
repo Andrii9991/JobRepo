@@ -1,0 +1,149 @@
+*
+{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+body > div
+{
+    background: url(1.jpg) no-repeat center ;
+    background-size: cover;/*позиціонуєм картинку щоб вона не виходила за рамки тега DIV*/
+    z-index: -1;/*робимо цей індекс щоб він стояв позаду всіх елементів на сторінці*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+section
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;/*матеріал в середині виставляєм по центру*/
+    justify-content: center;
+    background: rgba(48, 50, 56, 0.5);
+}
+
+.input-date-block
+{
+    position: fixed;
+    top: 0;
+    width: 220px;
+    height: 110px;
+    background: #1d1e22;
+    box-shadow: 0 0 10px #1d1e22 , 0 0 20px #1d1e22;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+}
+
+
+.input-date-block div
+{
+    background: 
+    margin: 10px auto 0 auto;
+    width: 150px;
+    height: 40px;
+    position: relative;
+}
+
+.input-date-block div input
+{
+    position: absolute;
+    border: none;
+    outline: none;/*рамка при кліку забираєм*/
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 0;
+    opacity: 0;
+}
+
+
+.input-date-block div span
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #f0b952;
+    font-size: 16px;/*розмір тексту*/
+    font-weight: 700;
+    letter-spacing: 2px;/*відстань між літерами*/
+    text-transform: uppercase;/*усі літери великі*/
+}
+
+
+.input-date-block p
+{
+    background: ;
+    color: #999797;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+.time-block,
+.time-block div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 50%;
+}    
+
+.time-block
+
+{
+      
+    width: 240px;
+    height: 240px;
+    margin: 0 25px;
+    
+    cursor: default ;
+    background: conic-gradient( #02c2c2c2 0 0% , #303238 0% 100% );
+    box-shadow: 0 0 10px #303238, 0 0 20px #303238;
+}
+
+.time-block div
+{
+    
+    width: 210px;    
+    height: 210px;
+    
+    background: #1d1e22;
+    box-shadow: 0 0 4px #1dle22, 0 0 6px #1d1e22; 
+}
+
+.time-block div ul li
+{
+    margin: -15px 0 0 0 ;
+    text-align: center;
+}
+
+.time-block div ul li:nth-child( 1 )
+{
+    color: #04dddd;
+    font-size: 110px;
+    font-weight: 700;
+}
+
+.time-block div ul li:nth-child( 2 )
+{
+    color: #f7f8a4;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
